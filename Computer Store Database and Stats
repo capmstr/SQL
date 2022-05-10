@@ -1,0 +1,25 @@
+CREATE TABLE inventory(
+id INTEGER PRIMARY KEY,
+item_name TEXT,
+price INTEGER,
+rating INTEGER,
+stock INTEGER);
+
+INSERT INTO inventory VALUES
+(1, "Keyboard", 100, 10, 9),
+(2, "Mouse", 35, 8, 3),
+(3, "Cup", 10,7,200),
+(4, "Monitor", 300, 10, 50),
+(5, "Desk", 500, 9.8, 4),
+(6, "Phone", 1000, 9.3, 100),
+(7, "Speaker", 50, 8.7, 49),
+(8, "Camera", 35, 7.5, 30),
+(9, "Phone_charger", 19.99, 8, 43),
+(10, "Power_strip", 29, 4, 54),
+(11, "3D_printer", 399, 9, 6),
+(12, "Filiment", 20, 8.7, 400),
+(13, "Candle", 5, 6.7, 100),
+(14, "Computer_Chair", 599, 9.8, 4),
+(15, "Headphones", 99, 9, 54);
+
+SELECT * FROM Inventory ORDER BY price ASC;
